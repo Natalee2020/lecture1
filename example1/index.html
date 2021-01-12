@@ -23,24 +23,39 @@
                 display: none; /* start with caption hidden */
                 font-style: italic;
             }
+            h1 {
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 12px;
+            }
+            .caption_text{
+                text-align: center;
+            }
         </style>
     </head>
 
     <!-- content -->
     <body>
         <!-- some text and links -->
-        <p>
-            <a href="https://commons.wikimedia.org/wiki/File:Black_hole_-_Messier_87_crop_max_res.jpg">Event Horizon Telescope, uploader cropped and converted TIF to JPG</a>, <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>, via Wikimedia Commons
-        </p>
+         
+        
+        <h1 class="caption_text">MASTER IN ADVANCED COMPUTATION FOR ARCHITECTURE & DESIGN MaCAD 2020/2021</h1>
+        <h2 class="caption_text">DESIGN STUDIO</h2>
+
         
         <!-- an image -->
-        <img id="myImage"
-             alt="Black hole - Messier 87 crop max res"
-             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black_hole_-_Messier_87_crop_max_res.jpg/1024px-Black_hole_-_Messier_87_crop_max_res.jpg">
-
+        <div class="caption_text">
+            <img id="myImage"
+            alt="studio project 2020"
+            src="Big_Fs.jpg">    
+        </div>
+       
         <!-- a caption -->
         <p id="caption">
-            The Event Horizon Telescope (EHT) — a planet-scale array of eight ground-based radio telescopes forged through international collaboration — was designed to capture images of a black hole. In coordinated press conferences across the globe, EHT researchers revealed that they succeeded, unveiling the first direct visual evidence of the supermassive black hole in the centre of Messier 87 and its shadow.
+            The city today is lacking the community space: the modern architecture has created a number of single-function venues which are often separated far from each other. Even the so-called multifunctional or mixed-use buildings are really mostly the retail centers with an entertainment component and they are usually located far from the residential areas. The only areas fully adaptable to all kinds of public activities are parks but there the climate issues come into play.
+Moscow is located in the sharply continental climate zone, with the annual temperature difference over 50 C, cold winter, hot summer and frequent rains in the midseason. Altogether this calls for the sheltered public space. Another problem, specific to Moscow, is the deficit of the quality public space in the old residential areas in the historical center. There are plenty of world-class museums and theaters, bars and restaurants but there is no space which would combine various public functions in one building and suit all ages and genders.
+
         </p>
 
         <!-- javascript -->
@@ -55,11 +70,13 @@
             // define what happens when there is a mouse over event
             function mouseOver() {
                 document.getElementById('caption').style.display = 'block';
+                img.style.border='2px solid black';
             }
 
             // define what happens when there is a mouse out event
             function mouseOut() {
                 document.getElementById('caption').style.display = 'none';
+                img.style.border='none';
             }
         </script>
 
